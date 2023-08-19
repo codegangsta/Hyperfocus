@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F916BDB2A918BEF00250093 /* HyperfocusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F916BDA2A918BEF00250093 /* HyperfocusApp.swift */; };
+		3F916BDD2A918BEF00250093 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F916BDC2A918BEF00250093 /* Persistence.swift */; };
+		3F916BE02A918BEF00250093 /* Hyperfocus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F916BDE2A918BEF00250093 /* Hyperfocus.xcdatamodeld */; };
+		3F916BE22A918BEF00250093 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F916BE12A918BEF00250093 /* ContentView.swift */; };
+		3F916BE42A918BF000250093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F916BE32A918BF000250093 /* Assets.xcassets */; };
+		3F916BE82A918BF000250093 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F916BE72A918BF000250093 /* Preview Assets.xcassets */; };
+		3F916BF22A918BF000250093 /* HyperfocusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F916BF12A918BF000250093 /* HyperfocusTests.swift */; };
+		3F916BFC2A918BF000250093 /* HyperfocusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F916BFB2A918BF000250093 /* HyperfocusUITests.swift */; };
+		3F916BFE2A918BF000250093 /* HyperfocusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F916BFD2A918BF000250093 /* HyperfocusUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F916BEE2A918BF000250093 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F916BCF2A918BEF00250093 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F916BD62A918BEF00250093;
+			remoteInfo = Hyperfocus;
+		};
+		3F916BF82A918BF000250093 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F916BCF2A918BEF00250093 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F916BD62A918BEF00250093;
+			remoteInfo = Hyperfocus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F916BD72A918BEF00250093 /* Hyperfocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hyperfocus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F916BDA2A918BEF00250093 /* HyperfocusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperfocusApp.swift; sourceTree = "<group>"; };
+		3F916BDC2A918BEF00250093 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		3F916BDF2A918BEF00250093 /* Hyperfocus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hyperfocus.xcdatamodel; sourceTree = "<group>"; };
+		3F916BE12A918BEF00250093 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3F916BE32A918BF000250093 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F916BE52A918BF000250093 /* Hyperfocus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hyperfocus.entitlements; sourceTree = "<group>"; };
+		3F916BE72A918BF000250093 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3F916BED2A918BF000250093 /* HyperfocusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HyperfocusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F916BF12A918BF000250093 /* HyperfocusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperfocusTests.swift; sourceTree = "<group>"; };
+		3F916BF72A918BF000250093 /* HyperfocusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HyperfocusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F916BFB2A918BF000250093 /* HyperfocusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperfocusUITests.swift; sourceTree = "<group>"; };
+		3F916BFD2A918BF000250093 /* HyperfocusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperfocusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F916BD42A918BEF00250093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F916BEA2A918BF000250093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F916BF42A918BF000250093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F916BCE2A918BEF00250093 = {
+			isa = PBXGroup;
+			children = (
+				3F916BD92A918BEF00250093 /* Hyperfocus */,
+				3F916BF02A918BF000250093 /* HyperfocusTests */,
+				3F916BFA2A918BF000250093 /* HyperfocusUITests */,
+				3F916BD82A918BEF00250093 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F916BD82A918BEF00250093 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F916BD72A918BEF00250093 /* Hyperfocus.app */,
+				3F916BED2A918BF000250093 /* HyperfocusTests.xctest */,
+				3F916BF72A918BF000250093 /* HyperfocusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F916BD92A918BEF00250093 /* Hyperfocus */ = {
+			isa = PBXGroup;
+			children = (
+				3F916BDA2A918BEF00250093 /* HyperfocusApp.swift */,
+				3F916BDC2A918BEF00250093 /* Persistence.swift */,
+				3F916BE12A918BEF00250093 /* ContentView.swift */,
+				3F916BE32A918BF000250093 /* Assets.xcassets */,
+				3F916BE52A918BF000250093 /* Hyperfocus.entitlements */,
+				3F916BDE2A918BEF00250093 /* Hyperfocus.xcdatamodeld */,
+				3F916BE62A918BF000250093 /* Preview Content */,
+			);
+			path = Hyperfocus;
+			sourceTree = "<group>";
+		};
+		3F916BE62A918BF000250093 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3F916BE72A918BF000250093 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3F916BF02A918BF000250093 /* HyperfocusTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F916BF12A918BF000250093 /* HyperfocusTests.swift */,
+			);
+			path = HyperfocusTests;
+			sourceTree = "<group>";
+		};
+		3F916BFA2A918BF000250093 /* HyperfocusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F916BFB2A918BF000250093 /* HyperfocusUITests.swift */,
+				3F916BFD2A918BF000250093 /* HyperfocusUITestsLaunchTests.swift */,
+			);
+			path = HyperfocusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F916BD62A918BEF00250093 /* Hyperfocus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F916C012A918BF000250093 /* Build configuration list for PBXNativeTarget "Hyperfocus" */;
+			buildPhases = (
+				3F916BD32A918BEF00250093 /* Sources */,
+				3F916BD42A918BEF00250093 /* Frameworks */,
+				3F916BD52A918BEF00250093 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hyperfocus;
+			productName = Hyperfocus;
+			productReference = 3F916BD72A918BEF00250093 /* Hyperfocus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F916BEC2A918BF000250093 /* HyperfocusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F916C042A918BF000250093 /* Build configuration list for PBXNativeTarget "HyperfocusTests" */;
+			buildPhases = (
+				3F916BE92A918BF000250093 /* Sources */,
+				3F916BEA2A918BF000250093 /* Frameworks */,
+				3F916BEB2A918BF000250093 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F916BEF2A918BF000250093 /* PBXTargetDependency */,
+			);
+			name = HyperfocusTests;
+			productName = HyperfocusTests;
+			productReference = 3F916BED2A918BF000250093 /* HyperfocusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F916BF62A918BF000250093 /* HyperfocusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F916C072A918BF000250093 /* Build configuration list for PBXNativeTarget "HyperfocusUITests" */;
+			buildPhases = (
+				3F916BF32A918BF000250093 /* Sources */,
+				3F916BF42A918BF000250093 /* Frameworks */,
+				3F916BF52A918BF000250093 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F916BF92A918BF000250093 /* PBXTargetDependency */,
+			);
+			name = HyperfocusUITests;
+			productName = HyperfocusUITests;
+			productReference = 3F916BF72A918BF000250093 /* HyperfocusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F916BCF2A918BEF00250093 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3F916BD62A918BEF00250093 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					3F916BEC2A918BF000250093 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 3F916BD62A918BEF00250093;
+					};
+					3F916BF62A918BF000250093 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 3F916BD62A918BEF00250093;
+					};
+				};
+			};
+			buildConfigurationList = 3F916BD22A918BEF00250093 /* Build configuration list for PBXProject "Hyperfocus" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F916BCE2A918BEF00250093;
+			productRefGroup = 3F916BD82A918BEF00250093 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F916BD62A918BEF00250093 /* Hyperfocus */,
+				3F916BEC2A918BF000250093 /* HyperfocusTests */,
+				3F916BF62A918BF000250093 /* HyperfocusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F916BD52A918BEF00250093 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F916BE82A918BF000250093 /* Preview Assets.xcassets in Resources */,
+				3F916BE42A918BF000250093 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F916BEB2A918BF000250093 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F916BF52A918BF000250093 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F916BD32A918BEF00250093 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F916BDB2A918BEF00250093 /* HyperfocusApp.swift in Sources */,
+				3F916BDD2A918BEF00250093 /* Persistence.swift in Sources */,
+				3F916BE22A918BEF00250093 /* ContentView.swift in Sources */,
+				3F916BE02A918BEF00250093 /* Hyperfocus.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F916BE92A918BF000250093 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F916BF22A918BF000250093 /* HyperfocusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F916BF32A918BF000250093 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F916BFE2A918BF000250093 /* HyperfocusUITestsLaunchTests.swift in Sources */,
+				3F916BFC2A918BF000250093 /* HyperfocusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F916BEF2A918BF000250093 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F916BD62A918BEF00250093 /* Hyperfocus */;
+			targetProxy = 3F916BEE2A918BF000250093 /* PBXContainerItemProxy */;
+		};
+		3F916BF92A918BF000250093 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F916BD62A918BEF00250093 /* Hyperfocus */;
+			targetProxy = 3F916BF82A918BF000250093 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3F916BFF2A918BF000250093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F916C002A918BF000250093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3F916C022A918BF000250093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hyperfocus/Hyperfocus.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hyperfocus/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.codegangsta.Hyperfocus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F916C032A918BF000250093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hyperfocus/Hyperfocus.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hyperfocus/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.codegangsta.Hyperfocus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F916C052A918BF000250093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.codegangsta.HyperfocusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hyperfocus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hyperfocus";
+			};
+			name = Debug;
+		};
+		3F916C062A918BF000250093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.codegangsta.HyperfocusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hyperfocus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hyperfocus";
+			};
+			name = Release;
+		};
+		3F916C082A918BF000250093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.codegangsta.HyperfocusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hyperfocus;
+			};
+			name = Debug;
+		};
+		3F916C092A918BF000250093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.codegangsta.HyperfocusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hyperfocus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F916BD22A918BEF00250093 /* Build configuration list for PBXProject "Hyperfocus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F916BFF2A918BF000250093 /* Debug */,
+				3F916C002A918BF000250093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F916C012A918BF000250093 /* Build configuration list for PBXNativeTarget "Hyperfocus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F916C022A918BF000250093 /* Debug */,
+				3F916C032A918BF000250093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F916C042A918BF000250093 /* Build configuration list for PBXNativeTarget "HyperfocusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F916C052A918BF000250093 /* Debug */,
+				3F916C062A918BF000250093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F916C072A918BF000250093 /* Build configuration list for PBXNativeTarget "HyperfocusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F916C082A918BF000250093 /* Debug */,
+				3F916C092A918BF000250093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3F916BDE2A918BEF00250093 /* Hyperfocus.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3F916BDF2A918BEF00250093 /* Hyperfocus.xcdatamodel */,
+			);
+			currentVersion = 3F916BDF2A918BEF00250093 /* Hyperfocus.xcdatamodel */;
+			path = Hyperfocus.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3F916BCF2A918BEF00250093 /* Project object */;
+}
