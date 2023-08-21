@@ -13,8 +13,6 @@ import FamilyControls
 struct ContentView: View {
     let wordDuration = 25 * 60
     let breakDuration = 5 * 60
-    
-    let store = ManagedSettingsStore()
         
     @State private var timeRemaining: Int = 25 * 60
     @State private var timer: Timer? = nil
@@ -41,23 +39,10 @@ struct ContentView: View {
             }
         }
         .padding(.all)
-        .onAppear {
-            Task {
-                try await AuthorizationCenter.shared.requestAuthorization(for: FamilyControlsMember.individual)
-            }
-        }
     }
     
     private func toggleBlock() {
         isBlocked.toggle()
-        
-        if isBlocked {
-            store.shield.applicationCategories = .all()
-            
-        } else {
-            store.shield.applicationCategories = .none
-        }
-        
     }
     
     private func startTimer() {
