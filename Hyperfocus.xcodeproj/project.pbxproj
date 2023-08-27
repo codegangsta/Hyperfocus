@@ -17,6 +17,9 @@
 		3F916BFE2A918BF000250093 /* HyperfocusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F916BFD2A918BF000250093 /* HyperfocusUITestsLaunchTests.swift */; };
 		3F916C342A93070500250093 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F916C332A93070500250093 /* RootView.swift */; };
 		3F916C362A930AE100250093 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F916C352A930AE100250093 /* SettingsView.swift */; };
+		7A0D85EB2A9B9D7D003C6E70 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D85EA2A9B9D7D003C6E70 /* Context.swift */; };
+		7A0D85ED2A9B9E39003C6E70 /* ContextStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D85EC2A9B9E39003C6E70 /* ContextStore.swift */; };
+		7A0D85EF2A9B9F59003C6E70 /* CodableColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D85EE2A9B9F59003C6E70 /* CodableColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,9 @@
 		3F916C122A92E9F100250093 /* ManagedSettingsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettingsUI.framework; path = Library/Frameworks/ManagedSettingsUI.framework; sourceTree = DEVELOPER_DIR; };
 		3F916C332A93070500250093 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		3F916C352A930AE100250093 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7A0D85EA2A9B9D7D003C6E70 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		7A0D85EC2A9B9E39003C6E70 /* ContextStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextStore.swift; sourceTree = "<group>"; };
+		7A0D85EE2A9B9F59003C6E70 /* CodableColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +131,9 @@
 				3F916BE62A918BF000250093 /* Preview Content */,
 				3F916C332A93070500250093 /* RootView.swift */,
 				3F916C352A930AE100250093 /* SettingsView.swift */,
+				7A0D85EE2A9B9F59003C6E70 /* CodableColor.swift */,
+				7A0D85EA2A9B9D7D003C6E70 /* Context.swift */,
+				7A0D85EC2A9B9E39003C6E70 /* ContextStore.swift */,
 			);
 			path = Hyperfocus;
 			sourceTree = "<group>";
@@ -297,7 +306,10 @@
 				3F916C362A930AE100250093 /* SettingsView.swift in Sources */,
 				3F916C342A93070500250093 /* RootView.swift in Sources */,
 				3F916BDB2A918BEF00250093 /* HyperfocusApp.swift in Sources */,
+				7A0D85EB2A9B9D7D003C6E70 /* Context.swift in Sources */,
+				7A0D85ED2A9B9E39003C6E70 /* ContextStore.swift in Sources */,
 				3F916BDD2A918BEF00250093 /* Persistence.swift in Sources */,
+				7A0D85EF2A9B9F59003C6E70 /* CodableColor.swift in Sources */,
 				3F916BE22A918BEF00250093 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

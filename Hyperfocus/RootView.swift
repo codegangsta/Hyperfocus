@@ -13,12 +13,12 @@ struct RootView: View {
     @State private var settings = false
     
     var body: some View {
-        NavigationStack {
-            ContentView().toolbar {
-                NavigationLink("hey", "settings")
-                Button("Settings") {
-                    settings = true
-                }
+        TabView {
+            ContentView().tabItem {
+                Label("Timer", systemImage: "list.dash")
+            }
+            SettingsView().tabItem {
+                Label("Settings", systemImage: "list.dash")
             }
         }
     }
