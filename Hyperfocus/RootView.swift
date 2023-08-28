@@ -20,6 +20,11 @@ struct RootView: View {
             SettingsView().tabItem {
                 Label("Settings", systemImage: "list.dash")
             }
+            ButtonAnimationDemo(action: {
+                print("Boom")
+            }).tabItem {
+                Label("Button", systemImage: "list.dash")
+            }
         }
     }
 }
